@@ -1,0 +1,137 @@
+/* CSS */
+*{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+section{  
+  background-image: url(../img/2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+h1 {
+  font-size: 30px;
+
+}
+.navigasi a{
+  font-size: 20px;
+  letter-spacing: 1,5px;
+  padding: 2px 10px;
+  border-radius: 48px;
+  margin-right: 26px;
+  color: black;
+  background: #71DFE7;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigasi a:hover{
+  background: #FFFFFF;
+
+}
+.isi{
+  max-width: 850px;
+  margin: 100px ;
+}
+h2{
+  color: #71DFE7;
+  font-size: 65px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 70px;
+  margin-bottom: 35px;
+}
+.right {
+  margin-bottom: 800px;
+}
+
+p{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.klik{
+  
+  
+  font-size: 22px;
+  color: black;
+  background: #71DFE7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition-property: background;
+}
+
+.klik:hover{
+  background: #FFFFFF;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.icons a{
+  position: relative;
+  font-size: 20px;
+  transition-property: transform;
+   margin-right: 30px;
+}
+
+.icons a:hover{
+  transform: scale(1.2);
+}
+
+
+/* RWD Landingpage*/
+
+@media (max-width: 960px){
+  header .navigasi{
+    display: none;
+  }
+
+  #check:checked ~ header .navigasi{
+    z-index: 2;
+    position: fixed;
+    background: rgba(114, 223, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .isi .info h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .isi .info p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 560px){
+  .isi .info h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .isi .info p{
+    font-size: 14px;
+  }
+}

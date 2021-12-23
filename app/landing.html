@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Selamat Datang! | UKM Bahagia</title>
+        <meta name="description" content="Budgetin Landing Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style-global.css">
+        <link rel="stylesheet" type="text/css" href="css/style-landing.css">
+        <script type="text/javascript" src="js/panel-collapsed.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="collapsed-panel">
+                <button class="btn-close" onclick="hideCollapsed()">
+                    <img src="img/icons/btn-close.png" id="img-btn-close">
+                </button>
+                <a href="landing.html" class="nav-menu-active" onclick="hideCollapsed()">Beranda</a>
+                <a href="#promo-2" onclick="hideCollapsed()">FAQ</a>
+                <a href="#promo-1 " onclick="hideCollapsed()">About Us</a>
+                <a href="#copyright" onclick="hideCollapsed()">Contact</a>
+            </div>
+<!-- ----------------------------------------------HEADER-------------------------------------------------- -->            
+            <header>
+                <a href="landing.html" class="logo-header">UKM Bahagia</a>
+                <button href="#" class="btn-collapse" onclick="showCollapsed()">
+                    <img src="img/icons/btn-collapse.png">
+                </button>
+                <div class="nav-and-reg">
+                    <nav class="nav-header">
+                        <ul>
+                            <li><a href="#header" class="nav-menu-active">Home</a></li>
+                            <li><a href="#promo-1">About Us</a></li>
+                        </ul>
+                    </nav>
+                    <button class="btn-signin" onclick="location.href='login.php'">Masuk</button>
+                </div>
+            </header>
+<!-- --------------------------------------------Background------------------------------------------------ -->
+            <img src="img/market.jpg" id="img-bg-1">
+<!-- ----------------------------------------------CONTENT------------------------------------------------- -->
+            <div id="promo-1">
+            </div>
+            <div id="about">
+                <h2 id="title-about">ABOUT US</h2>
+                <h3 id="subtitle-about">Aplikasi Keuangan UMKM</h3>
+                <p id="paragraph-about">
+                    "Aplikasi UKM Bahagia Yang Disusun Oleh Kelompok Amigoz."
+                </p>
+            </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+            <footer id="copyright">
+                <p>© 2021 AMIGOZ Kelas C</p>
+            </footer>
+        </div>
+    </body>
+</html>

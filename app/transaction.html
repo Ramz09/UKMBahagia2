@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transaksi | UKM Bahagia</title>
+        <meta name="description" content="Budgetin Transaction Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style-global-app.css">
+        <link rel="stylesheet" type="text/css" href="css/style-app-transaction.css">
+        <script src="js/jquery-min3.5.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+<!-- ----------------------------------------------SIDEBAR------------------------------------------------- -->
+            <div class="container-sidebar">
+                <div class="container-sidebar-logo">
+                    <a href="" class="logo-sidebar">UKM Bahagia</a>
+                </div>
+                <div class="nav-and-acc">
+                    <ul>
+                        <li>
+                            <button onclick="location.href='dashboard.php'"class="btn-sidebar">
+                                <img src="img/icons/DB.png" class="icons-sidebar">Dashboard</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-sidebar btn-sidebar-active">
+                                <img src="img/icons/TS-ACTIVE.png" class="icons-sidebar">Transaksi</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="location.href='account.php'" class="btn-sidebar">
+                                <img src="img/icons/PF.png" class="icons-sidebar">Profil</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="location.href='landing.html'" class="btn-sidebar">
+                                <img src="img/icons/OUT.png" class="icons-sidebar">Keluar</a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="content-middle">
+                    <div class="container-content-title">
+                        <h2>Transaksi</h2>
+                        <p>Tambah transaksi baru.</p>
+                    </div>
+                    <div class="pane-content">
+                        <div class="container-content-data">
+                            <h2>Transaksi Baru</h2>
+                        </div>
+                        <form id="form_transaction" action="phpscripts/transactions_insert.php" method="POST" name="form_transaction" autocomplete="off">
+                            <ul>
+                                <li>
+                                    <div class="div-l">
+                                        <label>Nama</label>
+                                        <input type="text" value="" id="name" name="name"  class="textfield">                                            
+                                    </div>
+                                    <div class="div-r">
+                                        <label id="title-income">Pemasukan</label>
+                                        <input type="number" value="0" id="income" name="income" placeholder="Total expense" class="textfield" min="0" step="10000">                                            
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="div-l">
+                                        <label>Kategori</label>
+                                        <select id="kategori" name="kategori" class="textfield">
+                                            <option value="Tagihan">Tagihan</option>
+                                            <option value="Belanja">Belanja</option>
+                                            <option value="Gaji Karyawan">Gaji Karyawan</option>
+                                            <option value="Penjualan">Penjualan</option>
+                                            <option value="Lain-lain">Lain-lain</option>
+                                          </select>
+                                    </div>
+                                    <div class="div-r">
+                                        <label id="title-expense">Pengeluaran</label>
+                                        <input type="number" value="0" id="expense" name="expense" placeholder="Total expense" class="textfield" min="0">                                            
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="submit" class="btn-add" value="Tambah">
+                                    <div id="error2"></div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
